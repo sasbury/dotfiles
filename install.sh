@@ -4,7 +4,7 @@
 
 olddir=~/dotfiles_old             # old dotfiles backup directory
 dir=~/github/dotfiles                # dotfiles directory
-files="zshrc oh-my-zsh tmux.conf"    # list of files/folders to symlink in homedir
+files="zshrc tmux.conf"    # list of files/folders to symlink in homedir
 
 # create dotfiles_old in homedir
 echo "[*] Creating $olddir for backup of any existing dotfiles in ~"

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo '[*] Installing zsh ...' &&\
-sudo apt-get install -y zsh
+sudo apt-get install -y zsh &&\
 
 echo '[*] Installing oh-my-zsh ...' &&\
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &&\
 
 # Make config directory for Neovim's init.vim
 echo '[*] Preparing Neovim config directory ...' &&\
@@ -37,4 +37,6 @@ curl -fLo ~/.local/share/fonts/Roboto\ Mono\ Nerd\ Font\ Complete.ttf --create-d
 echo -e '[*] Running :PlugInstall within nvim ...' &&\
 sed '/call plug#end/q' init.vim > ~/.config/nvim/init.vim &&\
 nvim -c ':PlugInstall' -c ':qall' &&\
-rm ~/.config/nvim/init.vim &&\
+rm ~/.config/nvim/init.vim
+
+
