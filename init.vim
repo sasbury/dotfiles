@@ -20,8 +20,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
 
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
@@ -74,12 +72,9 @@ set encoding=utf-8
 set number
 set title
 
-""" Plugin Configurations
+imap jj <Esc>
 
-" NERDTree
-let NERDTreeShowHidden=1
-let g:NERDTreeDirArrowExpandable = '↠'
-let g:NERDTreeDirArrowCollapsible = '↡'
+""" Plugin Configurations
 
 " Neovim :Terminal
 tmap <Esc> <C-\><C-n>
@@ -141,7 +136,6 @@ endfunction
 """ Custom Mappings
 
 let mapleader=","
-nmap <leader>q :NERDTreeToggle<CR>
 nmap <leader>w :TagbarToggle<CR>
 nmap \ <leader>q<leader>w
 nmap <leader>r :so ~/.config/nvim/init.vim<CR>
