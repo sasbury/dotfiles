@@ -87,3 +87,9 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 plugins=(git zsh-syntax-highlighting colored-man)
 export PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m"$'\n'" %{$fg_no_bold[yellow]%}%~ %{$reset_color%}%# "
 export RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
+
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=~/code/nats
+export DISPLAY=:0.0
+
+

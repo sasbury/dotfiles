@@ -3,7 +3,7 @@
 ########## Variables
 
 olddir=~/dotfiles_old             # old dotfiles backup directory
-dir=~/github/dotfiles                # dotfiles directory
+dir=~/code/dotfiles                # dotfiles directory
 files="zshrc tmux.conf"    # list of files/folders to symlink in homedir
 
 # create dotfiles_old in homedir
@@ -23,4 +23,5 @@ for file in $files; do
 done
 
 echo '[*] Copying init.vim -> ~/.config/nvim/init.vim' &&\
+mkdir -p ~/.config/nvim/ &&\
 cp init.vim ~/.config/nvim/
